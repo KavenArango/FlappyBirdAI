@@ -35,6 +35,11 @@ class Bird:
         self.height = self.y
 
     def move(self):
+        self.tick_count +=1
 
+        d = self.vel*self.tick_count + 1.5 * self.tick_count**2
 
+        if d > 16:
+            d = 16
+        elif
 
